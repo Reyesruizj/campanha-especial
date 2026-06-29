@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación - Vila Guilherme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --text-link: #2563eb;
+            --card-bg: #ffffff;
+            --accent-orange: #f59e0b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 640px;
+        }
+
+        /* Cabeçalho */
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .header .subtitle {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #64748b;
+            font-weight: 600;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 8px 0 16px 0;
+            color: #0c2340; /* Azul escuro idêntico ao da imagem */
+        }
+
+        .divider {
+            width: 24px;
+            height: 4px;
+            background-color: #e2e8f0;
+            border-radius: 2px;
+            margin: 0 auto 24px auto;
+        }
+
+        .back-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            display: inline-block;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--text-main);
+        }
+
+        /* Alerta de Boas-vindas */
+        .welcome-box {
+            background-color: #fef3c7; /* Amarelo bem claro */
+            border-left: 4px solid var(--accent-orange);
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .welcome-box h3 {
+            margin: 0 0 10px 0;
+            font-size: 15px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .welcome-box p {
+            margin: 0;
+            font-size: 14px;
+            color: #1e293b;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Cards Gerais */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            display: flex;
+            gap: 16px;
+        }
+
+        .card-icon {
+            font-size: 20px;
+            margin-top: 2px;
+        }
+
+        .card-content {
+            flex: 1;
+        }
+
+        .card-title {
+            font-size: 15px;
+            font-weight: 600;
+            margin: 0 0 8px 0;
+            color: #0c2340;
+        }
+
+        .card-text {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .card-subtext {
+            font-size: 13px;
+            color: #64748b;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        /* Links dentro dos cards */
+        .card-content a {
+            color: var(--text-link);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .card-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos específicos para a lista de detalhes do terceiro card */
+        .details-list {
+            margin-top: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .details-item {
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+            font-size: 14px;
+        }
+
+        strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="header">
+            <span class="subtitle">ESP. &bull; PROGRAMACIÓN</span>
+            <h1>Vila Guilherme</h1>
+            <div class="divider"></div>
+            <a href="#" class="back-link">&larr; Cambiar de congregación</a>
+        </div>
+
+        <div class="welcome-box">
+            <h3>Queridos hermanos:</h3>
+            <p>A continuación, se presenta información relacionada con las reuniones congregacionales, las reuniones para el servicio del campo y otras actividades programadas durante su asignación en la Campaña Especial de Predicación.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">📍</div>
+            <div class="card-content">
+                <h4 class="card-title">Salón del Reino</h4>
+                <p class="card-text">Av. Angelina, 581 &ndash; Vila Leonor &ndash; São Paulo &ndash; SP &mdash; <a href="https://maps.google.com" target="_blank">ver en el mapa &nearr;</a></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">📅</div>
+            <div class="card-content">
+                <h4 class="card-title">Reuniones congregacionales</h4>
+                <p class="card-text">
+                    Vida y Ministerio Cristiano &mdash; <strong>Jueves</strong>, 19:45<br>
+                    Reunión Pública &mdash; <strong>Domingo</strong>, 10:00
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🗺️</div>
+            <div class="card-content">
+                <h4 class="card-title">Evento de hospitalidad</h4>
+                <p class="card-text">
+                    <strong>Grupo Escolar Visconde de Itaúna</strong><br>
+                    <strong>Domingos, 17:00 h</strong>
+                </p>
+                
+                <div class="details-list">
+                    <div class="details-item">
+                        <span>📍</span>
+                        <span class="card-text">Calle Silva Bueno, 1412 &ndash; Ipiranga &ndash; São Paulo &ndash; SP &mdash; <a href="https://maps.google.com" target="_blank">ver en el mapa &nearr;</a></span>
+                    </div>
+                    <div class="details-item">
+                        <span>🅿️</span>
+                        <span class="card-text"><strong>Estacionamiento gratuito:</strong> Calle Almirante Lobo, 777 &ndash; Ipiranga &ndash; São Paulo &ndash; SP &mdash; <a href="https://maps.google.com" target="_blank">ver en el mapa &nearr;</a></span>
+                    </div>
+                    <div class="details-item">
+                        <span>🚇</span>
+                        <span class="card-text"><strong>Metro más cercano:</strong> Estación Sacomã (1,4 km | 19 min caminando)</span>
+                    </div>
+                </div>
+
+                <p class="card-subtext">El anciano de contacto te dará más detalles sobre cuándo podrás asistir a ese evento.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,2 +1,0 @@
-# campanha-especial
-campanha-especial
